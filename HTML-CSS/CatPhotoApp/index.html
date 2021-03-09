@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cat Webpage</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <main>
+        <h2 class="red-text">CatPhotoApp</h2>
+
+
+        <p class="red-text">
+            Click here to view more
+            <a target="_blank" href="#">cat photos</a>
+        </p>
+        <a href="#"><img class="smaller-image thick-green-border" src="https://bit.ly/fcc-relaxing-cat" alt="A cute kitty laying on its back"></a>
+        <div class="silver-background">
+        <p>Things cat love:</p>
+        <ul>
+            <li>cat nip</li>
+            <li>laser pointers</li>
+            <li>lasgna</li>
+        </ul>
+        <ul>
+            <li>cuddle</li>
+            <li>milk</li>
+            <li>sleep</li>
+        </ul>
+        <p>Top 3 things cats hate:</p>
+        <ol>
+            <li>Baths</li>
+            <li>Thunders</li>
+            <li>Other cats</li>
+        </ol>
+    </div>
+        <form action="https://freecatphotoapp.com/submit-cat-photo" method="get">
+            <label for="indoor"><input type="radio" name="indoor-outdoor" id="indoor" value="indoor" checked>Indoor</label>
+            <label for="outdoor"><input type="radio" name="indoor-outdoor" id="outdoor" value="outdoor">Outdoor</label><br>
+            <label for="loving"><input type="checkbox" name="personality" id="loving" value="loving" checked>Loving</label><label
+                for="caring"><input type="checkbox" name="personality" id="caring" value="caring">Caring</label><label
+                for="charming"><input type="checkbox" name="personality" id="charming" value="charming">Charming</label><br>
+            <input type="text" required placeholder="cat photo URL" name="" id="">           
+            <button type="submit">Submit</button>
+        </form>
+
+    </main>
+    <footer id="footer">Copyright Cat Photo App</footer>
+</body>
+
+
+</html>
