@@ -1,0 +1,26 @@
+html {
+    font-family: sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex-grow: 1;
+}
+
+footer {
+    margin-bottom: 20px;
+}
+
+p:focus {
+    background-color: yellow;
+}
+
+button {
+    font-size: 16px;
+    padding: 10px;
+}

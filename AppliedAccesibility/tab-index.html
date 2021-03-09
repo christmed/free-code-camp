@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabindex to add Focus</title>
+    <link rel="stylesheet" href="tab-index-style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Ninja Survey</h1>
+    </header>
+    <main>
+        <section>
+            <form action="">
+                <p tabindex="0">Instructions: Fill in ALL your information then click<strong>Submit</strong></p>
+                <label for="username">Username:</label>
+                <input type="text" name="username" id="username"><br>
+            </form>
+            <form action="">
+                <fieldset>
+                    <legend>What level ninja are you?</legend>
+                    <input type="radio" name="levels" id="newbie"><label for="newbie">Newbie Kitten</label><br>
+                    <input type="radio" name="levels" id="intermediate"><label for="intermediate">Developing
+                        Student</label><br>
+                    <input type="radio" name="levels" id="master"><label for="master">9th Life Master</label>
+                </fieldset>
+            </form>
+            <form action="">
+                <fieldset>
+                    <legend>Select your favorite weapons:</legend>
+                    <input type="checkbox" name="weapons" id="stars" value="stars"><label for="stars">Throwing
+                        Stars</label><br>
+                    <input type="checkbox" name="weapons" id="nunchucks" value="nunchucks"><label
+                        for="chucks">Nunchucks</label><br>
+                    <input type="checkbox" name="weapons" id="sai" value="sai"><label for="sai" v>Sai Set</label><br>
+                    <input type="checkbox" name="weapons" id="sword" value="sword"><label for="sword">Sword</label>
+                </fieldset>
+                <br>
+                <input type="submit" name="submit" value="submit">
+            </form><br>
+        </section>
+    </main>
+    <footer>&copy; 2018 Camper Cat</footer>
+</body>
+</html>
