@@ -1,0 +1,76 @@
+#ball {
+    height: 100px;
+    width: 100px;
+    background: linear-gradient(
+        45deg,
+        #DB2E2E,
+        #EBE937
+    );
+    border-radius: 50%;
+    margin: 50px auto;
+    position: relative;
+    animation-name: moving;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes moving {
+    0% {
+        top: 0px;
+        left: 0px;
+    }
+    25% {
+        top: 200px;
+        left: 200px;
+        height: 100px;
+        width: 70px;
+    }
+    50% {
+        top: 400px;
+        left: 0px;
+        height: 70px;
+        width: 120px;
+    }
+    75% {
+        top: 200px;
+        left: -200px;
+        width: 100px;
+        width: 70px;
+    }
+    100% {
+        top: 0px;
+        left: 0px;
+    }
+}
+
+#ball2 {
+    height: 100px;
+    width: 100px;
+    background: linear-gradient(
+        45deg,
+        #16EB0D,
+        #0D39EB
+    );
+    border-radius: 50%;
+    position: relative;
+    margin: 350px auto;
+    animation-name: bouncing;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes bouncing {
+    0% {
+        bottom: 0px;
+    }
+
+    50% {
+        height: 70px;
+        width: 120px;
+        bottom: 450px; 
+    }
+
+    100% {
+        bottom: 0px;
+    }
+}

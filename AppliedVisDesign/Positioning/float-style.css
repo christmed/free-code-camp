@@ -1,0 +1,18 @@
+html {
+    font-family: sans-serif;
+}
+
+#left {
+    width: 50%;
+    float: left;
+}
+
+#right {
+    width: 40%;
+    float: right;
+}
+
+aside, section {
+    background-color: #ccc;
+    padding: 2px;
+}

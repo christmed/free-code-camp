@@ -1,0 +1,33 @@
+#ball {
+    height: 70px;
+    width: 70px;
+    background: linear-gradient(
+      35deg,
+      #ccffff,
+      #ffcccc
+    );
+    position: fixed;
+    top: 10%;
+    left: 20%;
+    border-radius: 50%;
+    animation-name: fading;
+    animation-duration: 4s;
+}
+    
+@keyframes fading {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        left: 60%;
+        opacity: 0.6;
+    }
+
+    100% {
+        right: 60%;
+        opacity: 0.1;
+    }
+
+
+}

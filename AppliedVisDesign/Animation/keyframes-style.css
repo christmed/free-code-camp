@@ -1,0 +1,47 @@
+div {
+    height: 40px;
+    width: 70%;
+    background: black;
+    margin: 50px auto;
+    border-radius: 5px;
+}
+
+#rect {
+    animation-name: rainbow;
+    animation-duration: 5s;
+}
+
+@keyframes rainbow {
+    0% {
+        background-color: red;
+    }
+
+    15% {
+        background-color: orange;
+    }
+
+    30% {
+        background-color: yellow;
+    }
+
+    45% {
+        background-color: green;
+    }
+
+    60% {
+        background-color: rgb(0, 195, 255);
+    }
+
+    75% {
+        background-color: indigo;
+    }
+
+    90% {
+        background-color: purple;
+    }
+
+    100% {
+        background-color: violet;
+    }
+
+}

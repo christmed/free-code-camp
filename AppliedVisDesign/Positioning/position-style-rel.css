@@ -1,0 +1,9 @@
+html {
+    font-family: sans-serif;
+}
+
+h2 {
+    position: relative;
+    bottom: 10px;
+    left: 15px;
+}
