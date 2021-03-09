@@ -1,0 +1,160 @@
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Open Sans, sans-serif;
+    font-size: .8em;
+    color: white;
+}
+
+.background {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: linear-gradient(
+        rgba(250, 128, 114, 0.615),
+        rgba(255, 160, 122, 0.615)
+    ),
+    url("https://wallpapercave.com/wp/wp3846205.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow-y: scroll;
+}
+
+#title {
+    text-align: center;
+}
+
+#description {
+    text-align: center;
+}
+
+#dropdown, #country {
+    background-color: white;
+    color: gray;
+}
+
+#survey-form {
+    background-color: rgba(247, 159, 108, 0.726);
+    position: relative;
+    top: 1.5em;
+    padding: 1em 1.5em;
+    margin: 1em 1em;
+    border-radius: .2em;
+    font-weight: 400;
+    font-size: 1.2em;
+    text-align: left;
+}
+
+input[type="text"], input[type="number"], input[type="email"], select {
+    border-radius: 5px;
+    border-style: hidden;
+    width: 100%;
+    height: 2.1em;
+    margin: .7em 0;
+    font-size: .9em;
+
+}
+
+input[type="checkbox"] {
+    text-align: left;
+
+}
+
+.controls {
+    display: flex;
+    margin-bottom: 1em;
+  }
+  
+  .radio {
+    flex: 1 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: .8em;
+    margin-left: -3em;
+    padding-top: 1em;
+  }
+
+#chckbox-container {
+    display: flex;
+    width: 100%;
+    height: auto;
+    margin-bottom: .6em;
+}
+
+#box-1, #box-2 {
+    width: 100%;
+}
+
+.checkbox {
+    display: flex;
+    width: 100%;
+    margin: .7em 0;
+    font-size: 1em;
+    text-align: center;
+}
+
+textarea {
+    margin: 1em 0;
+    font-family: inherit;
+    font-size: .8em;
+    max-width: 100%;
+    overflow: auto;
+    border-style: none;
+    resize: none;
+  }
+
+textarea:focus, input:focus, select:focus {
+    outline: .15em solid rgb(219, 131, 72);
+}
+
+
+#submit {
+    font-size: inherit;
+    width: 100%;
+    margin: auto;
+    padding: 0.3em;
+    background-color: #68b2ee;
+    color: white;
+    border-radius: 3px;
+    border: none;
+}
+
+button[type="submit"]:hover {
+    animation-name: background-color;
+    animation-duration: 600ms;
+    animation-fill-mode: forwards;
+    cursor: pointer;
+}
+
+@keyframes background-color {
+    100% {
+        background-color: #4d8cc0;
+    }
+}
+
+@media (min-width: 600px) {
+    body {
+        font-size: 1em;
+    }
+
+    .checkbox {
+        margin-inline: auto;
+    }
+
+    input[type=checkbox] {
+        width: 1.4em;
+        height: 1.4em;
+    }
+
+    #survey-form {
+        margin-inline: auto;
+        width: 60%;
+    }
+}
