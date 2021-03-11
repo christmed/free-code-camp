@@ -10,33 +10,36 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Oswald:wght@300&family=Ubuntu:wght@500&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="pland-style.css">
+    <link rel="stylesheet" href="pland-style.css" type="text/css">
 </head>
 
 <body>
     <div id="page-wrapper">
-        <header>
-            <nav id="nav-bar">
-                <div>
-                    <img src="https://cdn.dribbble.com/users/113499/screenshots/10356569/media/91abdbcc93cde260d104535623668aef.png?compress=1&resize=800x600" alt="Cute Paws logo"></div>
-                <div>
-                    <h1>Cute Paws</h1>
-                </div>
-                <div>
-                    <ul>
-                        <li>
-                            <a href="#">Home</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Contact</a></li>
-                        <li><a href="#">Adoption</a></li>
-                        <li><a href="">Donate</a></li>
-                    </ul>
-                </div>
-            </nav>
+        <header id=#header>
+            <img src="https://cdn.dribbble.com/users/113499/screenshots/10356569/media/91abdbcc93cde260d104535623668aef.png?compress=1&resize=800x600"
+                alt="Cute Paws logo" id="header-img">
+            <div class="shelter-info">
+                <h1>Cute Paws</h1>
+                <p>Animal Rescue Organization</p>
+            </div>
+        <input type="checkbox" class="nav-toggle" id="nav-toggle">
+        <nav id="nav-bar">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Adoption</a></li>
+                <li ><a href="#" class="donate-btn">Donate</a></li>
+            </ul>
+        </nav>
+        <label for="nav-toggle" class="nav-toggle-label">
+            <span></span>
+        </label>
         </header>
         <main>
             <div id="help-register">
-                <img src="https://img1.thelist.com/img/gallery/9-amazing-before-and-after-photos-of-rescued-dogs/-1476193212.jpg" alt="Dog looking upwards">
+                <img src="https://img1.thelist.com/img/gallery/9-amazing-before-and-after-photos-of-rescued-dogs/-1476193212.jpg"
+                    alt="Dog looking upwards">
                 <h3>Want to have fun at the shelter?</h3>
                 <p>Fill in the form and we will contact you.</p>
                 <form action="https://www.freecodecamp.com/email-submit).">
@@ -46,19 +49,22 @@
                     <label for="">
                         <input type="email" name="" id="">
                     </label>
-                        <label for="">
-                            <input type="number" name="" id="">
-                        </label>
+                    <label for="">
+                        <input type="number" name="" id="">
+                    </label>
                     <button type="submit">Submit</button>
                 </form>
             </div>
             <section id="about">
                 <div>
                     <h2>About Us</h2>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo a dolores facere perferendis unde veniam deleniti aliquid officia eligendi repellat, quo, voluptate magni corporis reprehenderit corrupti recusandae adipisci expedita ducimus?</p>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo a dolores facere perferendis unde
+                        veniam deleniti aliquid officia eligendi repellat, quo, voluptate magni corporis reprehenderit
+                        corrupti recusandae adipisci expedita ducimus?</p>
                 </div>
                 <div>
-                    <iframe src="https://www.youtube.com/embed/oK6wgzpRdRs" frameborder="0" allowfullscreen></iframe>
+                    <iframe src="https://www.youtube.com/embed/oK6wgzpRdRs" frameborder="0" allowfullscreen
+                        id="video"></iframe>
                 </div>
             </section>
             <section>
