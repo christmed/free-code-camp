@@ -8,96 +8,102 @@
     <title>Cute Paws Shelter</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link
-        href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Oswald:wght@300&family=Ubuntu:wght@500&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Oswald:wght@300&family=Ubuntu:wght@500&family=Rubik:wght@400&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="pland-style.css" type="text/css">
 </head>
 
 <body>
-    <div id="page-wrapper">
-        <header id=#header>
-            <img src="https://cdn.dribbble.com/users/113499/screenshots/10356569/media/91abdbcc93cde260d104535623668aef.png?compress=1&resize=800x600"
-                alt="Cute Paws logo" id="header-img">
-            <div class="shelter-info">
-                <h1>Cute Paws</h1>
-                <p>Animal Rescue Organization</p>
-            </div>
+    <header id="header">
+        <img src="https://cdn.dribbble.com/users/113499/screenshots/10356569/media/91abdbcc93cde260d104535623668aef.png?compress=1&resize=800x600"
+            alt="Cute Paws logo" id="header-img">
+        <div class="shelter-info">
+            <h1>Cute Paws</h1>
+            <p>Animal Rescue Organization</p>
+        </div>
         <input type="checkbox" class="nav-toggle" id="nav-toggle">
         <nav id="nav-bar">
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Adoption</a></li>
-                <li ><a href="#" class="donate-btn">Donate</a></li>
+                <li><a href="#" target="_blank">Home</a></li>
+                <li><a href="#" target="_blank">Blog</a></li>
+                <li><a href="#" target="_blank">Adoption</a></li>
+                <li><a href="#" target="_blank" class="donate-btn">Donate</a></li>
+                <li><a href="#" target="_blank">About</a></li>
+
             </ul>
         </nav>
         <label for="nav-toggle" class="nav-toggle-label">
             <span></span>
         </label>
-        </header>
+    </header>
+    <div id="content">
         <main>
-            <div id="help-register">
+            <div class="help-register">
                 <img src="https://img1.thelist.com/img/gallery/9-amazing-before-and-after-photos-of-rescued-dogs/-1476193212.jpg"
                     alt="Dog looking upwards">
                 <h3>Want to have fun at the shelter?</h3>
                 <p>Fill in the form and we will contact you.</p>
-                <form action="https://www.freecodecamp.com/email-submit).">
-                    <label for="">
-                        <input type="text" name="" id="">
-                    </label>
-                    <label for="">
-                        <input type="email" name="" id="">
-                    </label>
-                    <label for="">
-                        <input type="number" name="" id="">
-                    </label>
+                <form action="https://www.freecodecamp.com/email-submit" class="user-info">
+                    <label for="name" id="name-label">Name</label><input type="text" name="name-label" id="name"
+                        placeholder="Enter your name" required size="50">
+                    <label for="email" id="email-label">Email</label><input type="email" name="email-label" id="email"
+                        placeholder="Enter your email" multiple required>
+                    <label for="mobile" id="mobile-label">Mobile Number</label><input type="number" name="mobile-label"
+                        id="mobile" placeholder="Enter mobile number">
                     <button type="submit">Submit</button>
                 </form>
             </div>
-            <section id="about">
+            <section class="community">
+                <iframe src="https://www.youtube.com/embed/oK6wgzpRdRs" frameborder="0" allowfullscreen
+                    class="video"></iframe>
+                    <span class="share-text">Share video on:</span>
+                <div class="share-buttons">
+                    <a class="facebookshare" href="#" videoid="19-PVqgDrGE"><img src="https://d3n8a8pro7vhmx.cloudfront.net/themes/5cd27e6645de94f7c68fde1c/attachments/original/1565428154/facebookshare_video.png?1565428154" alt="share on fb"></a>
+                    <a class="" href="#" target="_blank"><img src="https://d3n8a8pro7vhmx.cloudfront.net/themes/5cd27e6645de94f7c68fde1c/attachments/original/1565428156/twittershare_video.png?1565428156" alt="share on twitter" class="twittershare tw-s"></a>
+                    <a class="" href="#"><img src="https://d3n8a8pro7vhmx.cloudfront.net/themes/5cd27e6645de94f7c68fde1c/attachments/original/1565428154/email_share_video.png?1565428154" class="emailshare em-s"></a>
+                </div>
+            </section>
+            <section class="adoption">
+                <div class="adoption-description">
+                    <h2>Animal Adoption</h2>
+                    <p>Make their lives better!</p>
+                </div>
+                <div class="adopt-img-container">
+                    <h3>Featured Cats</h3>
+                    <img src="https://pawr.org/wp-content/uploads/2019/01/KittenRescue_WhyAdopt1.jpg" alt="cat looking upfront">
+                </div>
+                <div class="adopt-img-container">
+                    <h3>Featured Dogs</h3>
+                    <img src="https://d339b5nop2tkmp.cloudfront.net/uploads/pictures/456/Viola_201044.jpg" alt="dog looking upfront">
+                </div>
+            </section>
+            <section class="about">
                 <div>
                     <h2>About Us</h2>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo a dolores facere perferendis unde
                         veniam deleniti aliquid officia eligendi repellat, quo, voluptate magni corporis reprehenderit
                         corrupti recusandae adipisci expedita ducimus?</p>
                 </div>
-                <div>
-                    <iframe src="https://www.youtube.com/embed/oK6wgzpRdRs" frameborder="0" allowfullscreen
-                        id="video"></iframe>
-                </div>
             </section>
-            <section>
-                <h2>Animal Adoption</h2>
-                <p>Make their lives better!</p>
-                <div>
-                    <h3>Featured Cats</h3>
-                    <img src="https://pawr.org/wp-content/uploads/2019/01/KittenRescue_WhyAdopt1.jpg" alt="">
-                </div>
-                <div>
-                    <h3>Featured Dogs</h3>
-                    <img src="https://d339b5nop2tkmp.cloudfront.net/uploads/pictures/456/Viola_201044.jpg" alt="">
-                </div>
-            </section>
-        </main>
-        <footer>
-            <div>
-                <h3>Follow us on:</h3>
-                <ul>
-                    <li>Facebook</li>
-                    <li>Twitter</li>
-                    <li>Instagram</li>
-                    <li>Youtube</li>
-                </ul>
-            </div>
-            <div>
-                <h3>Contact Us</h3>
-            </div>
-            <div>
-                <h3>Newsletter</h3>
-            </div>
-        </footer>
     </div>
+    </main>
+    <footer>
+        <div>
+            <h3>Follow us on:</h3>
+            <ul>
+                <li>Facebook</li>
+                <li>Twitter</li>
+                <li>Instagram</li>
+                <li>Youtube</li>
+            </ul>
+        </div>
+        <div>
+            <h3>Contact Us</h3>
+        </div>
+        <div>
+            <h3>Newsletter</h3>
+        </div>
+    </footer>
 </body>
 
 </html>
