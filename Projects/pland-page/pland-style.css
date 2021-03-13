@@ -30,6 +30,7 @@ body {
     font-weight: 400;
     font-size: 1em;
     color: var(--default-color);
+    overflow-x: hidden;
 }
 
 header {
@@ -217,6 +218,14 @@ button[type="submit"] {
     color: var(--white-color);
 }
 
+section img {
+    position: relative;
+    padding-bottom: 1em;
+    margin: 0em 1em;
+    width: 26rem;
+    border-radius: 10px;
+}
+
 .community{
     margin: 4em 2em;
     display: flex;
@@ -254,12 +263,14 @@ button[type="submit"] {
     padding: 1em 0;
 }
 
-.adoption img {
-        position: relative;
-        padding-bottom: 1em;
-        margin: 0em 1em;
-        width: 28rem;
-        border-radius: 10px;
+#share-buttons {
+    all: unset;
+    max-height: auto;
+    max-width: 100%;
+}
+
+.about {
+    text-align: center;
 }
 
 @media screen and (min-width: 800px) {
