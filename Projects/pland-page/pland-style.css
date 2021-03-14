@@ -9,6 +9,8 @@
     --donate-hover-still: rgba(250, 132, 35, 0.904);
     --input-back: rgba(191, 225, 236, 0.61);
     --default-color: #222;
+    --donation-card: rgba(48, 48, 41, 0.767);
+    --selected-card: rgb(58, 86, 207);
 }
 
 *, *::before, *::after {
@@ -214,6 +216,9 @@ button[type="submit"] {
     font-size: .9em;
     border-radius: 3px;
     border: hidden;
+}
+
+.submit-form {
     background:var(--donate-hover);
     color: var(--white-color);
 }
@@ -269,8 +274,124 @@ section img {
     max-width: 100%;
 }
 
+.donation {
+    min-width: 100%;
+    background-color: rgba(245, 105, 40, 0.87);
+    color: var(--white-color);
+    padding: 1em 0;
+    text-align: center;
+}
+
+.donations-container {
+    background: transparent;
+    width: auto;
+    color: var(--donation-card);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-template-rows: repeat(auto-fit, minmax(100px, 1fr));
+    grid-gap: 1em;
+    margin: 0 1em;
+    max-width: auto;
+    position: relative;
+    height: auto;
+}
+
+.don-opts {
+    background: rgb(243, 243, 242);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 2em;
+}
+
+input[type="radio"] {
+    appearance: none;
+}
+
+.don-opts input[type="number"] {
+    background: transparent;
+    color: var(--donation-card);
+    text-align: center;
+    border: hidden;
+    font-family: Ubuntu, sans-serif;
+    font-weight: 300;
+    height: fit-content;
+}
+
+input[type="number"]::placeholder {
+    color: var(--donation-card);
+}
+
+.donations-container div:focus{
+    background: var(--selected-card);
+    color: var(--white-color);
+}
+
+.five-dlls {
+    width: auto;
+    height: 100px;
+}
+
+.fifteen-dlls {
+    width: auto;
+    height: 100px;
+}
+
+.twentyfive-dlls {
+    width: auto;
+    height: 100px;
+}
+
+.fifty-dlls {
+    width: auto;
+    height: 100px;
+}
+
+.hundred-dlls {
+    width: auto;
+    height: 100px;
+}
+
+.x-dlls {
+    width: auto;
+    height: 100px;
+}
+
+.donate-btn-mobile {
+    background: var(--selected-card);
+    color: var(--white-color);
+    text-transform: uppercase;
+    font-size: 1.5em !important;
+    border-radius: 5px;
+}
+
 .about {
     text-align: center;
+    margin: 2em 1em;
+}
+
+footer {
+    background: var(--background);
+    color: var(--white-color);
+    position: absolute;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-us {
+    text-align: center;
+    margin: 0 1em;
+}
+
+hr {
+    width: 90%;
+    border: 0;
+    height: 2px;
+    background: var(--white-color);
 }
 
 @media screen and (min-width: 800px) {
@@ -280,7 +401,7 @@ section img {
 
     header {
         display: grid;
-        grid-template-columns: auto minmax(380px, 700px) 1fr auto;
+        grid-template-columns: auto-fit minmax(380px, 700px) 1fr auto;
     }
 
     nav {
@@ -322,7 +443,7 @@ section img {
         transform: scale(1, 1);
     }
 
-    .donate-btn {
+    .donate-btn-desktop {
         position: fixed;
         top: 4.5em;
         right: -4.5em;
@@ -333,11 +454,11 @@ section img {
         border-radius: .3em;
     }
 
-    .donate-btn::before {
+    .donate-btn-desktop::before {
         display: none;
     }
 
-    .donate-btn:hover {
+    .donate-btn-desktop:hover {
         animation-name: button;
         animation-duration: 600ms;
         animation-fill-mode: forwards;
