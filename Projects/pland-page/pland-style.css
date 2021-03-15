@@ -231,7 +231,7 @@ section img {
     border-radius: 10px;
 }
 
-.community{
+.community {
     margin: 4em 2em;
     display: flex;
     flex-direction: column;
@@ -371,6 +371,11 @@ input[type="number"]::placeholder {
     margin: 2em 1em;
 }
 
+.about-description {
+    margin: 0 1em;
+    text-align: center;
+}
+
 footer {
     background: var(--background);
     color: var(--white-color);
@@ -383,8 +388,44 @@ footer {
 }
 
 .contact-us {
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin: 0 1em;
+}
+
+.contact-us p {
+    font-size: 1.1em;
+}
+
+.mail input[type="email"] {
+    background: var(--white-color);
+    width: 26.188em;
+    font-family: Ubuntu;
+}
+
+textarea {
+    max-width: 100%;
+    overflow: auto;
+    border-style: none;
+    resize: none;
+    margin: .5em 0;
+    color: var(--default-color);
+    font-family: Ubuntu, sans-serif;
+    font-size: 1em;
+    border-radius: 5px;
+}
+
+.contact-submit-btn {
+    width: 29.098em;
+}
+
+textarea:focus, input:focus {
+    outline: .15em solid var(--orange-color);
+}
+
+.donations-container input:focus {
+    outline: none;
 }
 
 hr {
@@ -393,6 +434,88 @@ hr {
     height: 2px;
     background: var(--white-color);
 }
+
+.social-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.icons {
+    text-align: center;
+}
+
+.icons ul {
+    padding: 0;
+    margin-top: .5em;
+    display: flex;    
+}
+
+.icons ul li {
+    list-style: none;
+    margin: 0 .8em;
+}
+
+.icons ul li .fa {
+    font-size: 1.5em;
+    line-height: 1em;
+    transition: .6s;
+    color: var(--default-color);
+    margin-top: .45em;
+}
+
+.icons ul li .fa:hover {
+    color: var(--white-color);
+}
+
+.icons ul li a {
+    position: relative;
+    display: block;
+    width: 3em;
+    height: 3em;
+    border-radius: 50%;
+    background-color: var(--white-color);
+    text-align: center;
+    transition: .6s;
+    box-shadow: 0 5px 4px rgba(0,0,0,.5);
+}
+
+.icons ul li a:hover {
+    transform: translate(0, -10px);
+}
+
+.icons ul li:nth-child(1) a:hover {
+    background-color: #3b5999;
+}
+
+.icons ul li:nth-child(2) a:hover {
+    background-color: #55acee;
+}
+
+.icons ul li:nth-child(3) a:hover {
+    background-color: #e4405f;
+}
+
+.icons ul li:nth-child(4) a:hover {
+    background-color: #cd201f;
+}
+
+.newsletter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.email-box {
+    margin-top: -1em;
+}
+
+.newsletter input[type="email"] {
+    background: var(--white-color);
+    width: 24em;
+    margin: 1em 0;
+}
+
 
 @media screen and (min-width: 800px) {
     .nav-toggle-label {
